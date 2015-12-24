@@ -25,7 +25,9 @@ Member functions:
 	void SetTextPosition(sf::Vector2f pos);
 	void SetPlayerSize(float Size);
 
-The MusicManager also looks for a text file in the directory of music files that may contain artist info, name etc. 
+
+File rules:(important)
+The MusicManager looks for a text file in the directory of music files that may contain artist info, name etc. 
 The music files must be named as follows:
 1.Track 1.ogg
 2. any name will do.ogg
