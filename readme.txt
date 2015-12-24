@@ -9,7 +9,21 @@ to the constructor, a string with the location of music files.
 4.use the function obj.Handler() in your main game loop and obj.DisplayPlayer() to draw the player.
 5. You are done!!
 
+Member functions:
+	void Handler();			//placed in main game loop
+	void DisplayPlayer();   	//draw music player
 
+	MusicManager(sf::RenderWindow &GameWindow,string _SubDirectory="Music/");
+
+	void NextTrack();
+	void StopPlaying();
+	void StartPlaying();
+	void TogglePlaying();
+
+	
+	void SetTextSize(int size);
+	void SetTextPosition(sf::Vector2f pos);
+	void SetPlayerSize(float Size);
 
 The MusicManager also looks for a text file in the directory of music files that may contain artist info, name etc. 
 The music files must be named as follows:
@@ -33,5 +47,7 @@ the last of tracks
 #
 
 each track must end with a hashtag. 
+
+
 
 
